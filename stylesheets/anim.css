@@ -7,12 +7,71 @@
         display: inline-block;
         margin-left: 5vw;
     }
+    #laptop2{
+        position: absolute;
+        left: 6vw;
+        top: 3vw;
+        height: 8vw;
+        animation: btoafter2 9s infinite;
+    }
+
+    #laptop1{
+        position: absolute;
+        right: 9vw;
+        top: 0.5vw;
+        height: 8vw;
+        animation: atobefore2 9s infinite;
+
+    }
+    @keyframes btoafter2{
+        0%{
+            height: 0vw;
+        }
+
+        34%{
+            height: 0vw;
+        }
+        34.01%{
+            height: 8vw;
+        }
+        61%{
+            height: 8vw;
+        }
+        61.01%{
+            height: 0vw;
+        }
+
+        100%{
+            height: 0;
+        }
+
+    }
+
+    @keyframes atobefore2{
+        0%{
+            height: 0;
+        }
+
+        74%{
+            height: 0;
+        }
+        74.01%{
+            height: 8vw;
+        }
+
+        100%{
+            height: 8vw;
+        }
+
+    }
+
     #car{
         overflow: hidden;
         height: 14vw;
         display: inline-block;
         z-index: 5;
     }
+
     #manbefore{
         height: 14vw;
         position: absolute;
@@ -65,6 +124,12 @@
 
     }
 
+
+
+
+
+
+
     #FrontWheel,#BackWheel{
         animation: wheelrotate 2s infinite linear;
         animation-fill-mode: forwards;
@@ -87,6 +152,15 @@
             transform: translateY(5px);
         }
         9%{
+            transform: translateY(0px);
+        }
+        53%{
+            transform: translateY(0px);
+        }
+        55%{
+            transform: translateY(5px);
+        }
+        57%{
             transform: translateY(0px);
         }
     }
@@ -138,10 +212,17 @@
             transform: translateX(190vw);
         }
         40.01%{
-            transform: rotateY(0deg) translateX(-90vw);
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        50.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        90%{
+            transform: rotateY(0deg) translateX(190vw);
         }
-        80%{
-            transform: rotateY(0deg) translateX(-90vw);
+        
+        90.01%{
+            transform: rotateY(0deg) translateX(-100vw);
         }
         100%{
             transform: rotateY(0deg) translateX(-100vw);
@@ -160,18 +241,77 @@
 @media screen and (min-width:1080px) and (max-width: 1336px){
 
     #phone{
-        height: 17vw;
+        height: 18vw;
         display: inline-block;
         margin-left: 5vw;
     }
+    #laptop2{
+        position: absolute;
+        left: 6vw;
+        top: 3vw;
+        height: 12vw;
+        animation: btoafter2 9s infinite;
+    }
+
+    #laptop1{
+        position: absolute;
+        right: 10vw;
+        top: 0.5vw;
+        height: 12vw;
+        animation: atobefore2 9s infinite;
+
+    }
+    @keyframes btoafter2{
+        0%{
+            height: 0vw;
+        }
+
+        34%{
+            height: 0vw;
+        }
+        34.01%{
+            height: 10vw;
+        }
+        61%{
+            height: 10vw;
+        }
+        61.01%{
+            height: 0vw;
+        }
+
+        100%{
+            height: 0;
+        }
+
+    }
+
+    @keyframes atobefore2{
+        0%{
+            height: 0;
+        }
+
+        74%{
+            height: 0;
+        }
+        74.01%{
+            height: 10vw;
+        }
+
+        100%{
+            height: 10vw;
+        }
+
+    }
+
     #car{
         overflow: hidden;
-        height: 17vw;
+        height: 18vw;
         display: inline-block;
         z-index: 5;
     }
+
     #manbefore{
-        height: 17vw;
+        height: 18vw;
         position: absolute;
         right: 5vw;
         animation: btoafter 9s infinite;
@@ -179,7 +319,7 @@
     }
 
     #manafter{
-        height: 17vw;
+        height: 18vw;
         position: absolute;
         right: 5vw;
         animation: atobefore 9s infinite;
@@ -188,11 +328,11 @@
 
     @keyframes btoafter{
         0%{
-            height: 17vw;
+            height: 18vw;
         }
 
         24%{
-            height: 17vw;
+            height: 18vw;
         }
         24.01%{
             height: 0;
@@ -213,14 +353,20 @@
             height: 0;
         }
         24.01%{
-            height: 17vw;
+            height: 18vw;
         }
 
         100%{
-            height: 17vw;
+            height: 18vw;
         }
 
     }
+
+
+
+
+
+
 
     #FrontWheel,#BackWheel{
         animation: wheelrotate 2s infinite linear;
@@ -244,6 +390,15 @@
             transform: translateY(5px);
         }
         9%{
+            transform: translateY(0px);
+        }
+        53%{
+            transform: translateY(0px);
+        }
+        55%{
+            transform: translateY(5px);
+        }
+        57%{
             transform: translateY(0px);
         }
     }
@@ -295,15 +450,18 @@
             transform: translateX(190vw);
         }
         40.01%{
-            transform: rotateY(180deg) translateX(-120vw);
-        }
-        80%{
-            transform: rotateY(180deg) translateX(70vw);
-        }
-        80.01%{
-            transform: rotateY(0deg) translateX(-90vw);
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        50.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        90%{
+            transform: rotateY(0deg) translateX(190vw);
         }
         
+        90.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        }
         100%{
             transform: rotateY(0deg) translateX(-100vw);
         }
@@ -325,17 +483,76 @@
         display: inline-block;
         margin-left: 5vw;
     }
+    #laptop2{
+        position: absolute;
+        left: 6.5vw;
+        top: 4vw;
+        height: 14vw;
+        animation: btoafter2 9s infinite;
+    }
+
+    #laptop1{
+        position: absolute;
+        right: 9vw;
+        top: 0.5vw;
+        height: 14vw;
+        animation: atobefore2 9s infinite;
+
+    }
+    @keyframes btoafter2{
+        0%{
+            height: 0vw;
+        }
+
+        34%{
+            height: 0vw;
+        }
+        34.01%{
+            height: 14vw;
+        }
+        61%{
+            height: 14vw;
+        }
+        61.01%{
+            height: 0vw;
+        }
+
+        100%{
+            height: 0;
+        }
+
+    }
+
+    @keyframes atobefore2{
+        0%{
+            height: 0;
+        }
+
+        74%{
+            height: 0;
+        }
+        74.01%{
+            height: 14vw;
+        }
+
+        100%{
+            height: 14vw;
+        }
+
+    }
+
     #car{
         overflow: hidden;
         height: 22vw;
         display: inline-block;
         z-index: 5;
     }
+
     #manbefore{
         height: 22vw;
         position: absolute;
         right: 5vw;
-        animation: btoafter 7.5s infinite;
+        animation: btoafter 9s infinite;
         z-index: 1;
     }
 
@@ -343,7 +560,7 @@
         height: 22vw;
         position: absolute;
         right: 5vw;
-        animation: atobefore 7.5s infinite;
+        animation: atobefore 9s infinite;
         z-index: 1;
     }
 
@@ -383,6 +600,12 @@
 
     }
 
+
+
+
+
+
+
     #FrontWheel,#BackWheel{
         animation: wheelrotate 2s infinite linear;
         animation-fill-mode: forwards;
@@ -391,7 +614,7 @@
     }
 
     #image-1{
-        animation: btnorder 7.5s infinite;
+        animation: btnorder 9s infinite;
     }
 
     @keyframes btnorder{
@@ -407,10 +630,19 @@
         9%{
             transform: translateY(0px);
         }
+        53%{
+            transform: translateY(0px);
+        }
+        55%{
+            transform: translateY(5px);
+        }
+        57%{
+            transform: translateY(0px);
+        }
     }
 
     #Dress{
-        animation: dress 7.5s infinite;
+        animation: dress 9s infinite;
         animation-fill-mode: forwards;
         transform-box: fill-box;
         transform-origin: center;
@@ -442,7 +674,7 @@
     }
 
     #car{
-        animation: oscillate3 7.5s infinite linear;
+        animation: oscillate3 9s infinite linear;
         animation-fill-mode: forwards;
         transform-box: fill-box;
         transform-origin: center;
@@ -456,15 +688,18 @@
             transform: translateX(190vw);
         }
         40.01%{
-            transform: rotateY(180deg) translateX(-120vw);
-        }
-        80%{
-            transform: rotateY(180deg) translateX(70vw);
-        }
-        80.01%{
-            transform: rotateY(0deg) translateX(-90vw);
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        50.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        90%{
+            transform: rotateY(0deg) translateX(190vw);
         }
         
+        90.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        }
         100%{
             transform: rotateY(0deg) translateX(-100vw);
         }
@@ -485,12 +720,71 @@
         display: inline-block;
         margin-left: 5vw;
     }
+    #laptop2{
+        position: absolute;
+        left: 7vw;
+        top: 6vw;
+        height: 12vw;
+        animation: btoafter2 9s infinite;
+    }
+
+    #laptop1{
+        position: absolute;
+        right: 12vw;
+        top: 0.5vw;
+        height: 12vw;
+        animation: atobefore2 9s infinite;
+
+    }
+    @keyframes btoafter2{
+        0%{
+            height: 0vw;
+        }
+
+        34%{
+            height: 0vw;
+        }
+        34.01%{
+            height: 14vw;
+        }
+        61%{
+            height: 14vw;
+        }
+        61.01%{
+            height: 0vw;
+        }
+
+        100%{
+            height: 0;
+        }
+
+    }
+
+    @keyframes atobefore2{
+        0%{
+            height: 0;
+        }
+
+        74%{
+            height: 0;
+        }
+        74.01%{
+            height: 14vw;
+        }
+
+        100%{
+            height: 14vw;
+        }
+
+    }
+
     #car{
         overflow: hidden;
         height: 26vw;
         display: inline-block;
         z-index: 5;
     }
+
     #manbefore{
         height: 26vw;
         position: absolute;
@@ -543,6 +837,12 @@
 
     }
 
+
+
+
+
+
+
     #FrontWheel,#BackWheel{
         animation: wheelrotate 2s infinite linear;
         animation-fill-mode: forwards;
@@ -565,6 +865,15 @@
             transform: translateY(5px);
         }
         9%{
+            transform: translateY(0px);
+        }
+        53%{
+            transform: translateY(0px);
+        }
+        55%{
+            transform: translateY(5px);
+        }
+        57%{
             transform: translateY(0px);
         }
     }
@@ -616,15 +925,18 @@
             transform: translateX(190vw);
         }
         40.01%{
-            transform: rotateY(180deg) translateX(-120vw);
-        }
-        80%{
-            transform: rotateY(180deg) translateX(70vw);
-        }
-        80.01%{
-            transform: rotateY(0deg) translateX(-90vw);
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        50.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        90%{
+            transform: rotateY(0deg) translateX(190vw);
         }
         
+        90.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        }
         100%{
             transform: rotateY(0deg) translateX(-100vw);
         }
@@ -637,6 +949,7 @@
         width: 100%;
         z-index: 1;
     }
+
 }
 
 @media screen and (max-width:500px){
@@ -646,17 +959,76 @@
         display: inline-block;
         margin-left: 5vw;
     }
+    #laptop2{
+        position: absolute;
+        left: 7vw;
+        top: 6vw;
+        height: 18vw;
+        animation: btoafter2 9s infinite;
+    }
+
+    #laptop1{
+        position: absolute;
+        right: 13vw;
+        top: 0.5vw;
+        height: 8vw;
+        animation: atobefore2 9s infinite;
+
+    }
+    @keyframes btoafter2{
+        0%{
+            height: 0vw;
+        }
+
+        34%{
+            height: 0vw;
+        }
+        34.01%{
+            height: 16vw;
+        }
+        61%{
+            height: 16vw;
+        }
+        61.01%{
+            height: 0vw;
+        }
+
+        100%{
+            height: 0;
+        }
+
+    }
+
+    @keyframes atobefore2{
+        0%{
+            height: 0;
+        }
+
+        74%{
+            height: 0;
+        }
+        74.01%{
+            height: 16vw;
+        }
+
+        100%{
+            height: 16vw;
+        }
+
+    }
+
     #car{
         overflow: hidden;
         height: 28vw;
         display: inline-block;
         z-index: 5;
     }
+
     #manbefore{
         height: 28vw;
         position: absolute;
         right: 5vw;
-        animation: btoafter 7.5s infinite;
+        animation: btoafter 9s infinite;
         z-index: 1;
     }
 
@@ -664,7 +1036,7 @@
         height: 28vw;
         position: absolute;
         right: 5vw;
-        animation: atobefore 7.5s infinite;
+        animation: atobefore 9s infinite;
         z-index: 1;
     }
 
@@ -704,6 +1076,12 @@
 
     }
 
+
+
+
+
+
+
     #FrontWheel,#BackWheel{
         animation: wheelrotate 2s infinite linear;
         animation-fill-mode: forwards;
@@ -712,7 +1090,7 @@
     }
 
     #image-1{
-        animation: btnorder 7.5s infinite;
+        animation: btnorder 9s infinite;
     }
 
     @keyframes btnorder{
@@ -728,10 +1106,19 @@
         9%{
             transform: translateY(0px);
         }
+        53%{
+            transform: translateY(0px);
+        }
+        55%{
+            transform: translateY(5px);
+        }
+        57%{
+            transform: translateY(0px);
+        }
     }
 
     #Dress{
-        animation: dress 7.5s infinite;
+        animation: dress 9s infinite;
         animation-fill-mode: forwards;
         transform-box: fill-box;
         transform-origin: center;
@@ -763,7 +1150,7 @@
     }
 
     #car{
-        animation: oscillate3 7.5s infinite linear;
+        animation: oscillate3 9s infinite linear;
         animation-fill-mode: forwards;
         transform-box: fill-box;
         transform-origin: center;
@@ -777,15 +1164,18 @@
             transform: translateX(190vw);
         }
         40.01%{
-            transform: rotateY(180deg) translateX(-120vw);
-        }
-        80%{
-            transform: rotateY(180deg) translateX(70vw);
-        }
-        80.01%{
-            transform: rotateY(0deg) translateX(-90vw);
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        50.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        } 
+        90%{
+            transform: rotateY(0deg) translateX(190vw);
         }
         
+        90.01%{
+            transform: rotateY(0deg) translateX(-100vw);
+        }
         100%{
             transform: rotateY(0deg) translateX(-100vw);
         }
